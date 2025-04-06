@@ -1,16 +1,16 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()  // Ensure this is present
         google()
         mavenCentral()
-        gradlePluginPortal()
+        maven { url 'https://plugins.gradle.org/m2/' }  // Add this for Kotlin plugin
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
     }
 }
-rootProject.name = "CollegeEventPlanner"
-include ':app'
