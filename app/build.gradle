@@ -4,6 +4,7 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
+def compose_version = '1.6.4' 
 
 android {
     namespace 'com.example.collegeeventplanner'
